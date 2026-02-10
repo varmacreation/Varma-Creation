@@ -1,74 +1,36 @@
-/* Professional Theme Colors */
 :root {
     --primary: #1a2a6c;
-    --secondary: #b21f1f;
-    --accent: #fdbb2d;
-    --white: #ffffff;
-    --light-bg: #f8f9fa;
+    --red: #b21f1f;
+    --gold: #fdbb2d;
 }
 
-body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: var(--light-bg); margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; color: #333; }
 
-/* Header Styling */
-.main-header {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: var(--white);
-    padding: 20px 0 40px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* Header Fix */
+.main-header { background: linear-gradient(135deg, var(--primary), var(--red)); color: white; }
+
+.header-top { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    background: rgba(0,0,0,0.2); 
+    font-size: 0.8em; 
 }
 
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-    font-size: 0.9em;
-    opacity: 0.9;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding-bottom: 10px;
-}
+.header-content { padding: 40px 20px; text-align: center; }
+.header-content h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
 
-.header-main h1 {
-    margin: 0;
-    font-size: 2.8em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-/* Container & Cards */
-.container { max-width: 900px; margin: -20px auto 40px; padding: 0 15px; }
-.card { 
-    background: var(--white); 
-    padding: 30px; 
-    border-radius: 12px; 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
-    margin-bottom: 25px;
-}
-
-h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; }
+/* Content */
+.container { max-width: 700px; margin: 20px auto; padding: 15px; }
+.card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
+h2 { color: var(--primary); margin-top: 0; border-left: 4px solid var(--gold); padding-left: 10px; }
 
 .service-list { list-style: none; padding: 0; }
-.service-list li { padding: 12px 0; border-bottom: 1px solid #eee; font-weight: 500; }
+.service-list li { padding: 10px 0; border-bottom: 1px solid #eee; }
 
-.btn-call { 
-    background: var(--primary); 
-    color: white; 
-    padding: 12px 25px; 
-    text-decoration: none; 
-    border-radius: 30px; 
-    display: inline-block; 
-    margin-top: 15px;
-    transition: 0.3s;
-}
+.btn-call { background: var(--primary); color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
 
-/* Footer Styling */
-.main-footer {
-    background: #222;
-    color: #bbb;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 0.9em;
-}
+/* Footer Fix */
+.main-footer { background: #222; color: #888; text-align: center; padding: 20px; font-size: 0.9em; margin-top: 40px; }
 
-.wa-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; z-index: 100; }
+.wa-float { position: fixed; bottom: 20px; right: 20px; width: 60px; }
