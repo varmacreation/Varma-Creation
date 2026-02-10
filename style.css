@@ -4,9 +4,8 @@
     --gold: #fdbb2d;
 }
 
-body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; color: #333; }
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; color: #333; line-height: 1.6; }
 
-/* Header Fix */
 .main-header { background: linear-gradient(135deg, var(--primary), var(--red)); color: white; }
 
 .header-top { 
@@ -14,23 +13,22 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; colo
     justify-content: space-between; 
     padding: 10px 20px; 
     background: rgba(0,0,0,0.2); 
-    font-size: 0.8em; 
+    font-size: 0.85em; 
 }
 
 .header-content { padding: 40px 20px; text-align: center; }
 .header-content h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+.header-content p { margin: 5px 0 0; opacity: 0.9; }
 
-/* Content */
 .container { max-width: 700px; margin: 20px auto; padding: 15px; }
 .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
-h2 { color: var(--primary); margin-top: 0; border-left: 4px solid var(--gold); padding-left: 10px; }
+h2 { color: var(--primary); margin-top: 0; border-left: 5px solid var(--gold); padding-left: 15px; font-size: 1.4em; }
 
 .service-list { list-style: none; padding: 0; }
-.service-list li { padding: 10px 0; border-bottom: 1px solid #eee; }
+.service-list li { padding: 10px 0; border-bottom: 1px solid #eee; font-weight: 500; }
 
-.btn-call { background: var(--primary); color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+.btn-call { background: var(--primary); color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; display: inline-block; margin-top: 15px; font-weight: bold; }
 
-/* Footer Fix */
-.main-footer { background: #222; color: #888; text-align: center; padding: 20px; font-size: 0.9em; margin-top: 40px; }
+.main-footer { background: #222; color: #888; text-align: center; padding: 25px; font-size: 0.9em; margin-top: 40px; }
 
-.wa-float { position: fixed; bottom: 20px; right: 20px; width: 60px; }
+.wa-float { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; z-index: 100; }
