@@ -1,121 +1,28 @@
-/* Varma Creation - Premium External Style */
+/* Varma Creation - Professional Design */
 :root {
-    --navy: #1a2a6c;
-    --gold: #fdbb2d;
-    --accent: #b21f1f;
-    --white: #ffffff;
-    --bg: #f4f7f6;
+    --primary: #1a2a6c;
+    --accent: #fdbb2d;
+    --text: #333;
+    --light: #f4f7f6;
 }
 
-body { 
-    font-family: 'Poppins', 'Segoe UI', sans-serif; 
-    line-height: 1.6; 
-    color: #444; 
-    background-color: var(--bg); 
-    margin: 0; 
-    padding-bottom: 100px; 
-}
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: var(--light); color: var(--text); margin: 0; padding-bottom: 60px; }
+header { background: linear-gradient(135deg, #1a2a6c, #b21f1f); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+header h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
 
-header { 
-    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); 
-    color: white; 
-    padding: 60px 20px; 
-    text-align: center; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
+.container { max-width: 800px; margin: 30px auto; padding: 0 15px; }
+.card { background: white; padding: 25px; margin-bottom: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 6px solid var(--primary); }
 
-header h1 {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    letter-spacing: 5px;
-    border-bottom: 2px solid var(--gold);
-    display: inline-block;
-    padding-bottom: 5px;
-}
+h2 { color: var(--primary); margin-top: 0; font-size: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 10px; }
 
-.container { 
-    max-width: 850px; 
-    margin: -40px auto 30px; 
-    padding: 0 20px; 
-}
+.service-list { list-style: none; padding: 0; }
+.service-list li { padding: 12px 0; border-bottom: 1px dotted #ccc; font-weight: 500; }
 
-.card { 
-    background: white; 
-    padding: 30px; 
-    margin-bottom: 25px; 
-    border-radius: 20px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
-    border-top: 5px solid var(--navy);
-    transition: transform 0.3s ease;
-}
+.price-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+.price-table th { background: var(--primary); color: white; padding: 12px; text-align: left; }
+.price-table td { padding: 12px; border-bottom: 1px solid #eee; }
 
-.card:hover {
-    transform: translateY(-10px);
-}
+.btn-call { background: var(--primary); color: white; padding: 15px 25px; text-decoration: none; border-radius: 8px; display: inline-block; margin-top: 15px; font-weight: bold; transition: 0.3s; }
+.btn-call:hover { background: #b21f1f; }
 
-h2 { 
-    color: var(--navy); 
-    margin-top: 0; 
-    font-size: 1.6em;
-    display: flex;
-    align-items: center;
-}
-
-.btn-call { 
-    background: linear-gradient(to right, #1a2a6c, #2a5298);
-    color: white; 
-    padding: 15px 30px; 
-    text-decoration: none; 
-    border-radius: 50px; 
-    display: block;
-    text-align: center;
-    margin-top: 20px; 
-    font-weight: bold;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(26, 42, 108, 0.3);
-}
-
-.btn-call:hover {
-    background: #b21f1f;
-    box-shadow: 0 8px 20px rgba(178, 31, 31, 0.4);
-}
-
-.gst-box { 
-    background: #fff9f0; 
-    border: 2px dashed var(--gold); 
-    border-top: none;
-}
-
-code { 
-    background: #222; 
-    color: #00ff00; 
-    padding: 4px 10px; 
-    border-radius: 6px; 
-    font-weight: bold;
-}
-
-.wa-float { 
-    position: fixed; 
-    width: 65px; 
-    height: 65px; 
-    bottom: 30px; 
-    right: 30px; 
-    background-color: #25d366; 
-    border-radius: 50px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
-    z-index: 1000;
-}
-
-.wa-float:hover {
-    transform: scale(1.1);
-}
-
-iframe {
-    filter: grayscale(10%) contrast(1.2);
-    border-radius: 15px;
-}
-
-
+.wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.2); z-index: 1000; }
